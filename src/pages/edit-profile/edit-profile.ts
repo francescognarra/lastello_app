@@ -13,7 +13,7 @@ import {HomePage} from "../home/home";
 })
 export class EditProfilePage {
 
-  profiledata: Boolean = true;
+  profiledata: Boolean = true; 
 
   constructor(public navCtrl: NavController, public loadingCtrl: LoadingController, public toastCtrl: ToastController) {
 

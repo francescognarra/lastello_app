@@ -16,7 +16,7 @@ import {TripService} from "../providers/trip-service";
 
 import {ionBookingApp} from "./app.component";
 
-
+ 
 @NgModule({
   declarations: [
     ionBookingApp

@@ -19,7 +19,7 @@ export interface MenuItem {
 export class ionBookingApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = "page-edit-profile";
+  rootPage: any = "page-home";
   showMenu: boolean = true;
   // rootNavCtrl: NavController;
 
