@@ -1,6 +1,6 @@
 {
-  "name": "ionBooking",
-  "app_id": "9282c470",
+  "name": "lastelloApp",
+  "app_id": "14b6de2c",
   "type": "ionic-angular",
   "integrations": {
     "cordova": {}
