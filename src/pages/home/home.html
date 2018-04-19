@@ -2,13 +2,10 @@
 <ion-header class="animated fadeIn no-shadow">
 
   <ion-navbar class="no-border" color="primary">
-    <button ion-button menuToggle left>
-      <!-- <ion-icon name="menu"></ion-icon> -->
-    </button>
-    <button ion-button menuToggle right>
+    <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title style="text-align:center;">
+    <ion-title>
       <!-- <div ion-text class="icon-title text-white"></div> -->
       <img src="assets/img/logo.png" height="44px;">
     </ion-title>
@@ -26,12 +23,12 @@
 
 <ion-content class="profile common-bg">
 
-    <ion-card>
+    <ion-card style="height:100%;">
       <ion-card-content>
           <img src="assets/img/angel.png">
           <h2 class="fw500">Il Comparatore di funerali</h2>
           <h3 ion-text color="light">Realizza un preventivo per il funerale e confronta le migliori agenzie funebri della tua zona</h3>
-          <button ion-button large margin-top color="light" round>
+          <button ion-button large margin-top color="light" round (click)="selectCAP()">
             FAI UN PREVENTIVO
           </button>
       </ion-card-content>

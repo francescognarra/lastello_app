@@ -42,11 +42,16 @@ export class HomePage {
     date: new Date(this.dDate.setDate(this.dDate.getDate() + 1)).toISOString()
   }
 
-  constructor(public nav: NavController, public navParams: NavParams, public menuCtrl: MenuController, public modalCtrl: ModalController, public popoverCtrl: PopoverController, public hotelService: HotelService) {
+  constructor(public nav: NavController, public navParams: NavParams, public menuCtrl: MenuController, public modalCtrl: ModalController, public popoverCtrl: PopoverController) {
     // set sample data
     // this.menuCtrl.swipeEnable(true, 'authenticated');
     // this.menuCtrl.enable(true);
     // this.hotels = hotelService.getAll();
+  }
+
+  // go to search trip page
+  selectCAP() {
+    this.nav.push('page-search-trips');
   }
 
   ionViewDidLoad() {

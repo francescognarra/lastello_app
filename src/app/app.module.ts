@@ -15,6 +15,7 @@ import {CarService} from "../providers/car-service";
 import {TripService} from "../providers/trip-service";
 
 import {ionBookingApp} from "./app.component";
+import { AgencyServiceProvider } from '../providers/agency-service/agency-service';
 
  
 @NgModule({
@@ -53,7 +54,8 @@ import {ionBookingApp} from "./app.component";
     TripService,
     CarService,
     TripService,
-    { provide: ErrorHandler, useClass: IonicErrorHandler }
+    { provide: ErrorHandler, useClass: IonicErrorHandler },
+    AgencyServiceProvider
   ]
 })
 
