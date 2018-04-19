@@ -16,7 +16,7 @@ export class AgencyServiceProvider {
     // console.log('Hello AgencyServiceProvider Provider');
   }
 
-  getAgenciesByCap(cap: string) {
+  getAgenciesByCap(cap) {
     let promise = new Promise((resolve, reject) => {
       this.http.get('https://lastello.it/api/v1/agencies_by_cap.json?cap=' + cap)
         .toPromise()
