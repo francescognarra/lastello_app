@@ -18,12 +18,12 @@ export class BookingListPage {
     cap: string = '';
 
     agencies: Array<any> = [];
-
+ 
     constructor(public navCtrl: NavController, public service: AgencyServiceProvider, public navParams: NavParams) {
         this.cap = this.navParams.get('cap');
         this.getAgencies();
         console.log(this.navParams.get('cap'));
-        
+
     }
 
     itemTapped(booking) {

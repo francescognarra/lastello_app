@@ -17,7 +17,10 @@ import {TripService} from "../providers/trip-service";
 import {ionBookingApp} from "./app.component";
 import { AgencyServiceProvider } from '../providers/agency-service/agency-service';
 
- 
+import { Geolocation } from '@ionic-native/geolocation';
+import { NativeGeocoder } from '@ionic-native/native-geocoder';
+
+
 @NgModule({
   declarations: [
     ionBookingApp
@@ -55,7 +58,9 @@ import { AgencyServiceProvider } from '../providers/agency-service/agency-servic
     CarService,
     TripService,
     { provide: ErrorHandler, useClass: IonicErrorHandler },
-    AgencyServiceProvider
+    AgencyServiceProvider,
+    Geolocation,
+    NativeGeocoder
   ]
 })
 
