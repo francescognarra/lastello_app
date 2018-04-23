@@ -7,7 +7,7 @@
     </ion-navbar>
 </ion-header>
 
-<ion-content class="common-bg">
+<ion-content class="primary-bg">
   <ion-grid fixed>
     <ion-row>
       <ion-col col-12 margin-bottom>
@@ -17,15 +17,15 @@
           </ion-card-content>
         </ion-card>
 
-        <ion-list>
-            <ion-item-sliding *ngFor="let agency of agencies">
-                <button ion-item (click)="itemTapped(agency.hotel)">
+        <ion-list class="primary-bg">
+            <ion-item-sliding class="primary-bg" *ngFor="let agency of agencies">
+                <button class="primary-bg" ion-item (click)="itemTapped(agency.hotel)">
                     <ion-thumbnail item-left>
                         <img src="https:/lastello.it/{{agency.profile_photo}}"/>
                     </ion-thumbnail>
-                    <h2>{{agency.name}}</h2>
-                    <p>{{agency.price_from}} €</p>
-                    <ion-badge class="green-bg">Vedi</ion-badge>
+                    <h2 class="text-white">{{agency.name}}</h2>
+                    <p class="text-white">{{agency.price_from}} €</p>
+                    <ion-badge class="white-bg text-primary">Vedi</ion-badge>
                 </button>
             </ion-item-sliding>
         </ion-list>
